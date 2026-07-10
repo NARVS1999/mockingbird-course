@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 0005: Ch.4 — Mysterious Gifts</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>if (localStorage.getItem("theme") === "dark") document.documentElement.setAttribute("data-theme", "dark");</script>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" title="Toggle theme">&#9788;</button>
+<div class="lesson-layout">
+  <aside class="lesson-sidebar" id="lesson-sidebar"></aside>
+  <main class="lesson-main">
+    <div class="lesson-container">
+
+      <h1>Lesson 0005: Chapter 4 — Mysterious Gifts</h1>
+      <p><em>Ang mga kakaibang regalo sa knothole — sino ang nagbibigay at bakit?</em></p>
+
+      <div class="info">
+        <strong>Lesson Goal</strong>
+        Matapos ang lesson na ito, maiintindihan mo ang simula ng "Boo Radley game" ng mga bata, ang misteryo ng mga regalo sa tree knothole, at kung paano nagbabago ang tingin nila kay Boo mula sa takot patungong curiosity.
+      </div>
+
+      <!-- ======== Chapter Summary ======== -->
+      <h2>Chapter Summary</h2>
+      <p><em>Nagpatuloy ang summer nina Scout, Jem, at Dill. Sinimulan nila ang "Boo Radley game" — isang roleplay kung saan ginagaya nila ang buhay ng mga Radley. Isang araw, nakakita si Scout ng bagay sa knothole ng puno malapit sa bahay ni Radley: chewing gum. Pagkatapos, nakita nila ang mga Indian-head pennies, soap carvings na mukha nila, at isang spelling medal. Nagsimula silang mag-isip: sino ang nagbibigay ng mga ito?</em></p>
+
+      <!-- ======== Interactive Activity ======== -->
+      <h2>Interactive Activity: "Object Investigation" Station</h2>
+      <p>Alamin ang mga regalo mula kay Boo Radley!</p>
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <p><strong>Maglagay ng brown bag na may mga bagay:</strong></p>
+          <ul>
+            <li>Chewing gum</li>
+            <li>Indian-head pennies (o ordinaryong barya)</li>
+            <li>Soap carving (larawan o clay)</li>
+            <li>Spelling medal (o anumang maliit na trophy)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <p><strong>Sa grupo, hulaan:</strong></p>
+          <ul>
+            <li>Kanino galing ang mga ito?</li>
+            <li>Bakit binibigay ang mga ito?</li>
+            <li>Ano ang koneksyon nito sa pagkatao ni Boo?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <p><strong>Talakayin:</strong> Kung si Boo ang nagbibigay, ano ang ipinapahiwatig nito tungkol sa kanya? Hindi ba siya nakakatakot kung nagbibigay siya ng regalo?</p>
+        </div>
+      </div>
+
+      <!-- ======== Key Quotes ======== -->
+      <h2>Key Quotes</h2>
+
+      <blockquote>
+        <p>"Atticus was right. One time he said you never really know a man until you stand in his shoes and walk around in them. Just standing on the Radley porch was enough."</p>
+        <footer>— Scout Finch (later reflection)</footer>
+      </blockquote>
+      <p><em>Paano ito nagbabago ng tingin ng mga bata kay Boo?</em></p>
+
+      <!-- ======== Theme Connection ======== -->
+      <h2>Theme Connection</h2>
+      <div class="tip">
+        <strong>Loss of Innocence</strong>
+        Ang mga bata ay nagsimulang makita si Boo hindi bilang halimaw, kundi bilang tao na may damdamin. Ito ang simula ng kanilang moral growth.
+      </div>
+
+      <!-- ======== Quiz ======== -->
+      <h2>Quick Quiz</h2>
+
+      <div class="quiz-item">
+        <div class="quiz-question">1. Saan nakita ng mga bata ang mga regalo?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q1" value="a"> Sa may pinto ng bahay</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="b"> Sa knothole ng puno</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="c"> Sa may fence</label>
+        </div>
+        <div class="quiz-feedback" id="feedback1"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">2. Ano ang unang regalo na nakita nila?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q2" value="a"> Indian-head pennies</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="b"> Soap carving</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="c"> Chewing gum</label>
+        </div>
+        <div class="quiz-feedback" id="feedback2"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">3. Ano ang "Boo Radley game"?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q3" value="a"> Isang laro sa paaralan</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="b"> Roleplay kung saan ginagaya nila ang buhay ng mga Radley</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="c"> Isang sports game</label>
+        </div>
+        <div class="quiz-feedback" id="feedback3"></div>
+      </div>
+
+      <button class="quiz-submit" onclick="checkQuiz()">Check Answers</button>
+
+      <!-- ======== Reflection ======== -->
+      <div class="project">
+        <h3>Reflection Prompt</h3>
+        <p><strong>"Kung ikaw si Boo Radley at may mga bata na naglalaro ng 'your life', ano ang mararamdaman mo? Ano ang maaari mong gawin para makipag-communicate sa kanila?"</strong></p>
+      </div>
+
+      <!-- ======== Summary ======== -->
+      <h2>Summary</h2>
+      <ul>
+        <li>Nagsimula ang "Boo Radley game" ng mga bata</li>
+        <li>Nakakita sila ng mga regalo sa knothole: chewing gum, pennies, soap carving, medal</li>
+        <li>Nagsimula silang mag-isip kung sino ang nagbibigay</li>
+        <li>Ang chapter ay nagbabago ng tingin nila kay Boo mula sa takot patungong curiosity</li>
+      </ul>
+
+      <div class="info">
+        <strong>Questions?</strong>
+        Magtanong sa teacher tungkol sa symbolism ng mga regalo.
+      </div>
+
+      <!-- ======== Recommended Resource ======== -->
+      <h2>Recommended Resource</h2>
+      <p><em>Palalimin ang iyong pagkaunawa sa Chapter 4:</em></p>
+      <ul>
+        <li><strong>SparkNotes: Chapter 4 Summary</strong> — Detailed na summary. <a href="https://www.sparknotes.com/lit/mocking/summary/" target="_blank" rel="noopener">Bisitahin</a></li>
+      </ul>
+
+      <!-- Prev / Next — auto-populated by lesson-nav.js -->
+      <div class="lesson-nav"></div>
+
+    </div>
+  </main>
+</div>
+
+<!-- Scripts — order matters -->
+<script src="../assets/lessons-data.js"></script>
+<script src="../assets/sidebar.js"></script>
+<script src="../assets/lesson-nav.js"></script>
+<script>
+  function checkQuiz() {
+    var answers = { q1: 'b', q2: 'c', q3: 'b' };
+    for (var key in answers) {
+      var sel = document.querySelector('input[name="' + key + '"]:checked');
+      var fb = document.getElementById('feedback' + key.slice(1));
+      if (!sel) {
+        fb.textContent = 'Please select an answer.';
+        fb.className = 'quiz-feedback incorrect';
+        continue;
+      }
+      if (sel.value === answers[key]) {
+        fb.textContent = '\u2705 Correct! Well done.';
+        fb.className = 'quiz-feedback correct';
+      } else {
+        fb.textContent = '\u274C Incorrect. Review the material and try again.';
+        fb.className = 'quiz-feedback incorrect';
+      }
+    }
+  }
+</script>
+<script>
+  (function() {
+    var btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var html = document.documentElement;
+        var isDark = html.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          html.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

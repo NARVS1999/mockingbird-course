@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 0012: Ch.11 — Mrs. Dubose</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>if (localStorage.getItem("theme") === "dark") document.documentElement.setAttribute("data-theme", "dark");</script>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" title="Toggle theme">&#9788;</button>
+<div class="lesson-layout">
+  <aside class="lesson-sidebar" id="lesson-sidebar"></aside>
+  <main class="lesson-main">
+    <div class="lesson-container">
+
+      <h1>Lesson 0012: Chapter 11 — Mrs. Dubose</h1>
+      <p><em>Ang matandang si Mrs. Dubose, ang mga camellia, at ang totoong kahulugan ng tapang.</em></p>
+
+      <div class="info">
+        <strong>Lesson Goal</strong>
+        Matapos ang lesson na ito, maiintindihan mo ang sikat na definition ni Atticus ng courage, ang tunay na laban ni Mrs. Dubose, at kung paano nagbago ang tingin ni Jem sa kanya.
+      </div>
+
+      <!-- ======== Chapter Summary ======== -->
+      <h2>Chapter Summary</h2>
+      <p><em>Si Mrs. Henry Lafayette Dubose ay isang matandang neighbor na galit sa mga Finch. Isang araw, sinabi niya ang masasamang bagay tungkol kay Atticus, kaya sinira ni Jem ang mga bulaklak (camellias) niya. Bilang parusa, pinabasa ni Atticus kay Jem ang isang libro araw-araw habang nagre-recover si Mrs. Dubose mula sa morphine addiction. Nang mamatay si Mrs. Dubose, inabutan siya ni Atticus ng isang bulaklak — at sinabi niyang si Mrs. Dubose ang tunay na brave.</em></p>
+
+      <!-- ======== Interactive Activity ======== -->
+      <h2>Interactive Activity: "Posthumous Letter to Mrs. Dubose"</h2>
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <p><strong>Bilang si Jem, sumulat ng liham sa yumaong si Mrs. Dubose</strong> matapos malaman ang kanyang tunay na laban.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <p><strong>Ipahayag:</strong></p>
+          <ul>
+            <li>Ang iyong nararamdaman tungkol sa kanya</li>
+            <li>Kung nagbago ang tingin mo sa kanya</li>
+            <li>Ang aral na natutunan mo mula sa kanya</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <p><strong>Opsyonal:</strong> Magbasa ng excerpt mula sa *Ivanhoe* (binabasa ni Jem) at i-relate sa theme ng pagtitiyaga.</p>
+        </div>
+      </div>
+
+      <!-- ======== Key Quotes ======== -->
+      <h2>Key Quotes</h2>
+
+      <blockquote>
+        <p>"I wanted you to see what real courage is, instead of getting the idea that courage is a man with a gun in his hand. It's when you know you're licked before you begin but you begin anyway and you see it through no matter what."</p>
+        <footer>— Atticus Finch</footer>
+      </blockquote>
+      <p><em>Ang sikat na definition ni Atticus ng courage. Paano ito inilapat kay Mrs. Dubose?</em></p>
+
+      <blockquote>
+        <p>"She was the bravest person I ever knew."</p>
+        <footer>— Atticus Finch (tungkol kay Mrs. Dubose)</footer>
+      </blockquote>
+
+      <!-- ======== Theme Connection ======== -->
+      <h2>Theme Connection</h2>
+      <div class="tip">
+        <strong>Moral Courage</strong>
+        Si Mrs. Dubose ay nagpakita ng courage sa paglaban sa kanyang addiction — kahit alam niyang mamamatay siya. Ito ang uri ng courage na ipinaliwanag ni Atticus.
+      </div>
+
+      <!-- ======== Quiz ======== -->
+      <h2>Quick Quiz</h2>
+
+      <div class="quiz-item">
+        <div class="quiz-question">1. Ano ang ginawa ni Jem kay Mrs. Dubose?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q1" value="a"> Inalagaan siya</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="b"> Sinira ang mga bulaklak niya</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="c"> Binisita siya</label>
+        </div>
+        <div class="quiz-feedback" id="feedback1"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">2. Ano ang tunay na laban ni Mrs. Dubose?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q2" value="a"> Sakit sa puso</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="b"> Morphine addiction</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="c"> Kawalan ng pera</label>
+        </div>
+        <div class="quiz-feedback" id="feedback2"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">3. Ano ang definition ni Atticus ng courage?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q3" value="a"> Pagkakaroon ng baril</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="b"> Paglaban kahit alam mong matatalo ka</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="c"> Pagiging matapang sa away</label>
+        </div>
+        <div class="quiz-feedback" id="feedback3"></div>
+      </div>
+
+      <button class="quiz-submit" onclick="checkQuiz()">Check Answers</button>
+
+      <!-- ======== Reflection ======== -->
+      <div class="project">
+        <h3>Reflection Prompt</h3>
+        <p><strong>"Mayroon bang tao sa buhay mo na akala mo ay masama pero nang malaman mo ang tunay na kwento niya, nagbago ang tingin mo? Ano ang nangyari?"</strong></p>
+      </div>
+
+      <!-- ======== Summary ======== -->
+      <h2>Summary</h2>
+      <ul>
+        <li>Si Mrs. Dubose ay isang matandang galit sa mga Finch</li>
+        <li>Sinira ni Jem ang mga bulaklak niya — naging parusa ang pagbasa</li>
+        <li>Si Mrs. Dubose ay naglaban sa morphine addiction — tunay na courage</li>
+        <li>Ang definition ni Atticus ng courage: "when you know you're licked before you begin but you begin anyway"</li>
+      </ul>
+
+      <div class="info">
+        <strong>Questions?</strong>
+        Magtanong sa teacher tungkol sa courage o sa addiction.
+      </div>
+
+      <!-- ======== Recommended Resource ======== -->
+      <h2>Recommended Resource</h2>
+      <p><em>Palalimin ang iyong pagkaunawa sa Chapter 11:</em></p>
+      <ul>
+        <li><strong>SparkNotes: Chapter 11 Summary</strong> — Detailed na summary. <a href="https://www.sparknotes.com/lit/mocking/summary/" target="_blank" rel="noopener">Bisitahin</a></li>
+      </ul>
+
+      <!-- Prev / Next — auto-populated by lesson-nav.js -->
+      <div class="lesson-nav"></div>
+
+    </div>
+  </main>
+</div>
+
+<!-- Scripts — order matters -->
+<script src="../assets/lessons-data.js"></script>
+<script src="../assets/sidebar.js"></script>
+<script src="../assets/lesson-nav.js"></script>
+<script>
+  function checkQuiz() {
+    var answers = { q1: 'b', q2: 'b', q3: 'b' };
+    for (var key in answers) {
+      var sel = document.querySelector('input[name="' + key + '"]:checked');
+      var fb = document.getElementById('feedback' + key.slice(1));
+      if (!sel) {
+        fb.textContent = 'Please select an answer.';
+        fb.className = 'quiz-feedback incorrect';
+        continue;
+      }
+      if (sel.value === answers[key]) {
+        fb.textContent = '\u2705 Correct! Well done.';
+        fb.className = 'quiz-feedback correct';
+      } else {
+        fb.textContent = '\u274C Incorrect. Review the material and try again.';
+        fb.className = 'quiz-feedback incorrect';
+      }
+    }
+  }
+</script>
+<script>
+  (function() {
+    var btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var html = document.documentElement;
+        var isDark = html.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          html.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

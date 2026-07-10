@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Kill a Mockingbird — Complete Course</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script>if (localStorage.getItem("theme") === "dark") document.documentElement.setAttribute("data-theme", "dark");</script>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" title="Toggle theme">&#9788;</button>
+
+<div class="landing">
+  <h1>To Kill a Mockingbird</h1>
+  <p class="subtitle">by Harper Lee — Isang Kurso sa Pamamagitan ng Nobela</p>
+
+  <ul class="desc">
+    <li>Masusundan ang buong narrative arc mula Chapter 1 hanggang 31</li>
+    <li>Maa-analyze ang mga character motivations, conflicts, at transformations</li>
+    <li>Makikilala ang literary devices: symbolism, irony, point of view</li>
+    <li>Maugnay ang fictional events sa totoong kasaysayan (Jim Crow, Scottsboro Boys)</li>
+    <li>Makabuo ng sariling kritikal na essay o creative project</li>
+    <li>Matutunan ang aral ng empathy, moral courage, at justice para sa kasalukuyang panahon</li>
+  </ul>
+
+  <a href="lessons/0001-introduction-pre-reading.html" class="btn-start">Simulan ang Kurso</a>
+
+  <div class="phases">
+    <h2 style="border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-top: 2rem;">Mga Phase ng Kurso</h2>
+
+    <div class="phase-item">
+      <span class="phase-num">Phase 1</span>
+      <span class="phase-name">Introduction & Pre-Reading</span>
+      <span class="phase-count">1 lesson</span>
+    </div>
+    <div class="phase-item">
+      <span class="phase-num">Phase 2</span>
+      <span class="phase-name">Guided Reading — Chapters 1–31</span>
+      <span class="phase-count">31 lessons</span>
+    </div>
+    <div class="phase-item">
+      <span class="phase-num">Phase 3</span>
+      <span class="phase-name">Character Analysis</span>
+      <span class="phase-count">1 lesson</span>
+    </div>
+    <div class="phase-item">
+      <span class="phase-num">Phase 4</span>
+      <span class="phase-name">Themes & Symbolism Deep Dive</span>
+      <span class="phase-count">1 lesson</span>
+    </div>
+    <div class="phase-item">
+      <span class="phase-num">Phase 5</span>
+      <span class="phase-name">Historical Context & Connections</span>
+      <span class="phase-count">1 lesson</span>
+    </div>
+    <div class="phase-item">
+      <span class="phase-num">Phase 6</span>
+      <span class="phase-name">Writing & Critical Response</span>
+      <span class="phase-count">1 lesson</span>
+    </div>
+    <div class="phase-item">
+      <span class="phase-num">Phase 7</span>
+      <span class="phase-name">Creative Culminating Project</span>
+      <span class="phase-count">1 lesson</span>
+    </div>
+    <div class="phase-item">
+      <span class="phase-num">Phase 8</span>
+      <span class="phase-name">Assessment & Reflection</span>
+      <span class="phase-count">1 lesson</span>
+    </div>
+  </div>
+
+  <div style="margin-top: 3rem; padding: 1.5rem; background: var(--accent-light); border-radius: var(--radius); text-align: left;">
+    <blockquote style="border: none; background: none; padding: 0; margin: 0;">
+      <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 0.5rem;">"You never really understand a person until you consider things from his point of view… until you climb into his skin and walk around in it."</p>
+      <footer style="font-family: var(--font-sans); font-size: 0.9rem; color: var(--muted);">— Atticus Finch</footer>
+    </blockquote>
+  </div>
+</div>
+
+<script>
+  (function() {
+    var btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var html = document.documentElement;
+        var isDark = html.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          html.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

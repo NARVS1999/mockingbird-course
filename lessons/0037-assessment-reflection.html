@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 0037: Assessment & Reflection</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>if (localStorage.getItem("theme") === "dark") document.documentElement.setAttribute("data-theme", "dark");</script>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" title="Toggle theme">&#9788;</button>
+<div class="lesson-layout">
+  <aside class="lesson-sidebar" id="lesson-sidebar"></aside>
+  <main class="lesson-main">
+    <div class="lesson-container">
+
+      <h1>Lesson 0037: Assessment & Reflection</h1>
+      <p><em>Ang huling phase — assessment, personal reflection, at award ceremony.</em></p>
+
+      <div class="info">
+        <strong>Lesson Goal</strong>
+        Matapos ang lesson na ito, masusuri mo ang iyong natutunan, mag-re reflect sa buong kurso, at maipagdiwang ang iyong mga achievement.
+      </div>
+
+      <!-- ======== Summative Assessment ======== -->
+      <h2>Summative Assessment</h2>
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <p><strong>Unit Exam:</strong> Multiple choice (plot, characters), quote identification, short essay (theme analysis).</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <p><strong>Essay/Project Rubric</strong> ang basehan.</p>
+        </div>
+      </div>
+
+      <h3>Practice Questions</h3>
+
+      <div class="quiz-item">
+        <div class="quiz-question">1. Sino ang narrator ng To Kill a Mockingbird?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q1" value="a"> Jem Finch</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="b"> Scout Finch</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="c"> Atticus Finch</label>
+        </div>
+        <div class="quiz-feedback" id="feedback1"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">2. Ano ang "sin to kill a mockingbird"?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q2" value="a"> Pagpatay ng ibon</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="b"> Pagpaparusa sa inosenteng tao</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="c"> Pagkain ng mockingbird</label>
+        </div>
+        <div class="quiz-feedback" id="feedback2"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">3. Sino ang pumatay kay Bob Ewell?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q3" value="a"> Atticus</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="b"> Jem</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="c"> Boo Radley</label>
+        </div>
+        <div class="quiz-feedback" id="feedback3"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">4. Ano ang "walk in someone else's skin"?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q4" value="a"> Pagiging ibang tao</label>
+          <label class="quiz-option"><input type="radio" name="q4" value="b"> Empathy — intindihin ang perspektiba ng iba</label>
+          <label class="quiz-option"><input type="radio" name="q4" value="c"> Pagiging matapang</label>
+        </div>
+        <div class="quiz-feedback" id="feedback4"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">5. Saan ginanap ang Scottsboro Boys trial?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q5" value="a"> Alabama</label>
+          <label class="quiz-option"><input type="radio" name="q5" value="b"> New York</label>
+          <label class="quiz-option"><input type="radio" name="q5" value="c"> California</label>
+        </div>
+        <div class="quiz-feedback" id="feedback5"></div>
+      </div>
+
+      <button class="quiz-submit" onclick="checkQuiz()">Check Answers</button>
+
+      <!-- ======== Final Reflection ======== -->
+      <h2>Final Reflection</h2>
+
+      <div class="project">
+        <h3>Journal/Vlog Reflection</h3>
+        <p>Sagutin: <strong>"Ano ang isang bagay na mababago sa pananaw mo matapos basahin ang To Kill a Mockingbird? Paano mo magagamit ang aral nito bilang mamamayan?"</strong></p>
+        <p>Optional: I-share sa maliit na grupo o gumawa ng maikling vlog.</p>
+      </div>
+
+      <!-- ======== Award Ceremony ======== -->
+      <h2>Award Ceremony (Fun)</h2>
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <p><strong>"Atticus Award" for Integrity</strong> — Para sa estudyanteng laging nagpapakita ng honesty at moral courage.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <p><strong>"Scout Award" for Curiosity</strong> — Para sa estudyanteng laging nagtatanong at naghahanap ng katotohanan.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <p><strong>"Boo Radley Award" for Quiet Kindness</strong> — Para sa estudyanteng tahimik na nagpapakita ng kabaitan sa iba.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <p><strong>Iboto ng klase</strong> ang mga kaklaseng nag-exhibit ng mga traits na ito.</p>
+        </div>
+      </div>
+
+      <!-- ======== Congratulations ======== -->
+      <div class="info">
+        <strong>Congratulations!</strong>
+        Natapos mo ang buong kurso ng To Kill a Mockingbird! Tandaan: ang pinaka-mahalagang aral ay empathy — "You never really understand a person until you consider things from his point of view… until you climb into his skin and walk around in it."
+      </div>
+
+      <!-- ======== Summary ======== -->
+      <h2>Summary</h2>
+      <ul>
+        <li>Natapos mo ang buong kurso — mula Chapter 1 hanggang 31</li>
+        <li>Natutunan mo ang mga tema ng empathy, moral courage, at justice</li>
+        <li>Naisulat mo ang sarili mong essay o creative project</li>
+        <li>Ang pinaka-mahalagang aral: empathy para sa lahat</li>
+      </ul>
+
+      <div class="info">
+        <strong>Questions?</strong>
+        Magtanong sa teacher para sa karagdagang discussion o sa next steps.
+      </div>
+
+      <!-- ======== Recommended Resource ======== -->
+      <h2>Recommended Resource</h2>
+      <p><em>Patuloy ang iyong pag-aaral:</em></p>
+      <ul>
+        <li><strong>Film: To Kill a Mockingbird (1962)</strong> — Panoorin para sa visual comparison. <a href="https://www.imdb.com/title/tt0056592/" target="_blank" rel="noopener">Bisitahin</a></li>
+        <li><strong>SparkNotes: Full Study Guide</strong> — Review ng lahat ng topics. <a href="https://www.sparknotes.com/lit/mocking/" target="_blank" rel="noopener">Bisitahin</a></li>
+      </ul>
+
+      <!-- Prev / Next — auto-populated by lesson-nav.js -->
+      <div class="lesson-nav"></div>
+
+    </div>
+  </main>
+</div>
+
+<!-- Scripts — order matters -->
+<script src="../assets/lessons-data.js"></script>
+<script src="../assets/sidebar.js"></script>
+<script src="../assets/lesson-nav.js"></script>
+<script>
+  function checkQuiz() {
+    var answers = { q1: 'b', q2: 'b', q3: 'c', q4: 'b', q5: 'a' };
+    for (var key in answers) {
+      var sel = document.querySelector('input[name="' + key + '"]:checked');
+      var fb = document.getElementById('feedback' + key.slice(1));
+      if (!sel) {
+        fb.textContent = 'Please select an answer.';
+        fb.className = 'quiz-feedback incorrect';
+        continue;
+      }
+      if (sel.value === answers[key]) {
+        fb.textContent = '\u2705 Correct! Well done.';
+        fb.className = 'quiz-feedback correct';
+      } else {
+        fb.textContent = '\u274C Incorrect. Review the material and try again.';
+        fb.className = 'quiz-feedback incorrect';
+      }
+    }
+  }
+</script>
+<script>
+  (function() {
+    var btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var html = document.documentElement;
+        var isDark = html.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          html.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

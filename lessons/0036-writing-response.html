@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 0036: Writing & Response</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>if (localStorage.getItem("theme") === "dark") document.documentElement.setAttribute("data-theme", "dark");</script>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" title="Toggle theme">&#9788;</button>
+<div class="lesson-layout">
+  <aside class="lesson-sidebar" id="lesson-sidebar"></aside>
+  <main class="lesson-main">
+    <div class="lesson-container">
+
+      <h1>Lesson 0036: Writing & Critical Response</h1>
+      <p><em>Paano magsulat ng well-structured literary analysis essay.</em></p>
+
+      <div class="info">
+        <strong>Lesson Goal</strong>
+        Matapos ang lesson na ito, makabuo ka ng well-structured literary analysis essay na gumagamit ng textual evidence.
+      </div>
+
+      <!-- ======== Essay Prompts ======== -->
+      <h2>Essay Prompts (Pumili ng isa)</h2>
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <p><strong>Prompt 1:</strong> "Paano ginamit ni Harper Lee ang mockingbird bilang simbolo upang ipakita ang epekto ng prejudice? Talakayin ang dalawang karakter na maituturing na mockingbird."</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <p><strong>Prompt 2:</strong> "Si Atticus Finch ay madalas ituring na moral hero. Sang-ayon ka ba? Magbigay ng ebidensya mula sa text at iyong sariling pagsusuri."</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <p><strong>Prompt 3:</strong> "Ano ang papel ng empatiya sa pag-unlad ni Scout? Paano ito naging susi sa mensahe ng nobela?"</p>
+        </div>
+      </div>
+
+      <!-- ======== Structured Outline ======== -->
+      <h2>Structured Outline (Claim-Evidence-Analysis)</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Section</th>
+            <th>Content</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Intro</strong></td>
+            <td>Hook + Context + Thesis Statement (3 points)</td>
+          </tr>
+          <tr>
+            <td><strong>Body Paragraph 1</strong></td>
+            <td>Topic sentence → Quoted evidence → Analysis in Taglish → Concluding sentence</td>
+          </tr>
+          <tr>
+            <td><strong>Body Paragraph 2</strong></td>
+            <td>Topic sentence → Quoted evidence → Analysis in Taglish → Concluding sentence</td>
+          </tr>
+          <tr>
+            <td><strong>Body Paragraph 3</strong></td>
+            <td>Topic sentence → Quoted evidence → Analysis in Taglish → Concluding sentence</td>
+          </tr>
+          <tr>
+            <td><strong>Conclusion</strong></td>
+            <td>Balikan ang thesis, i-relate sa wider world o personal insight</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ======== Peer Review ======== -->
+      <h2>Peer Review Rubric</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Criteria</th>
+            <th>Check</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>May strong thesis ba?</td>
+            <td>Yes / No</td>
+          </tr>
+          <tr>
+            <td>Sapat ang ebidensya?</td>
+            <td>Yes / No</td>
+          </tr>
+          <tr>
+            <td>Maayos ang grammar/spelling?</td>
+            <td>Yes / No</td>
+          </tr>
+          <tr>
+            <td>Nai-explain ang "so what"?</td>
+            <td>Yes / No</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ======== Quiz ======== -->
+      <h2>Quick Quiz</h2>
+
+      <div class="quiz-item">
+        <div class="quiz-question">1. Ano ang "thesis statement"?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q1" value="a"> Ang huling pangungusap</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="b"> Ang pangunahing argument ng essay</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="c"> Ang introduction</label>
+        </div>
+        <div class="quiz-feedback" id="feedback1"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">2. Ano ang "evidence"?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q2" value="a"> Personal na opinyon</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="b"> Quotes o facts mula sa text</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="c"> Hula</label>
+        </div>
+        <div class="quiz-feedback" id="feedback2"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">3. Ano ang "analysis"?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q3" value="a"> Pag-uulit ng quote</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="b"> Pagpapaliwanag kung bakit mahalaga ang ebidensya</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="c"> Pagkopya ng text</label>
+        </div>
+        <div class="quiz-feedback" id="feedback3"></div>
+      </div>
+
+      <button class="quiz-submit" onclick="checkQuiz()">Check Answers</button>
+
+      <!-- ======== Project ======== -->
+      <div class="project">
+        <h3>Essay Writing Project</h3>
+        <p>Pumili ng isang prompt at sumulat ng 3-5 paragraph essay gamit ang structured outline. I-peer review ang essay ng katabi mo.</p>
+      </div>
+
+      <!-- ======== Summary ======== -->
+      <h2>Summary</h2>
+      <ul>
+        <li>Ang literary analysis essay ay may thesis, evidence, at analysis</li>
+        <li>Gumamit ng quotes mula sa text bilang ebidensya</li>
+        <li>I-explain kung bakit mahalaga ang bawat ebidensya</li>
+        <li>I-peer review ang essay para sa feedback</li>
+      </ul>
+
+      <div class="info">
+        <strong>Questions?</strong>
+        Magtanong sa teacher tungkol sa essay writing o sa peer review.
+      </div>
+
+      <!-- ======== Recommended Resource ======== -->
+      <h2>Recommended Resource</h2>
+      <p><em>Palalimin ang iyong pagkaunawa:</em></p>
+      <ul>
+        <li><strong>GradeSaver: Essay Topics</strong> — Mga essay prompts at guides. <a href="https://www.gradesaver.com/to-kill-a-mockingbird/study-guide/essay" target="_blank" rel="noopener">Bisitahin</a></li>
+      </ul>
+
+      <!-- Prev / Next — auto-populated by lesson-nav.js -->
+      <div class="lesson-nav"></div>
+
+    </div>
+  </main>
+</div>
+
+<!-- Scripts — order matters -->
+<script src="../assets/lessons-data.js"></script>
+<script src="../assets/sidebar.js"></script>
+<script src="../assets/lesson-nav.js"></script>
+<script>
+  function checkQuiz() {
+    var answers = { q1: 'b', q2: 'b', q3: 'b' };
+    for (var key in answers) {
+      var sel = document.querySelector('input[name="' + key + '"]:checked');
+      var fb = document.getElementById('feedback' + key.slice(1));
+      if (!sel) {
+        fb.textContent = 'Please select an answer.';
+        fb.className = 'quiz-feedback incorrect';
+        continue;
+      }
+      if (sel.value === answers[key]) {
+        fb.textContent = '\u2705 Correct! Well done.';
+        fb.className = 'quiz-feedback correct';
+      } else {
+        fb.textContent = '\u274C Incorrect. Review the material and try again.';
+        fb.className = 'quiz-feedback incorrect';
+      }
+    }
+  }
+</script>
+<script>
+  (function() {
+    var btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var html = document.documentElement;
+        var isDark = html.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          html.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

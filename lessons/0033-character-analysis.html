@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 0033: Character Analysis</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>if (localStorage.getItem("theme") === "dark") document.documentElement.setAttribute("data-theme", "dark");</script>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" title="Toggle theme">&#9788;</button>
+<div class="lesson-layout">
+  <aside class="lesson-sidebar" id="lesson-sidebar"></aside>
+  <main class="lesson-main">
+    <div class="lesson-container">
+
+      <h1>Lesson 0033: Character Analysis</h1>
+      <p><em>Malalim na pagsusuri sa mga karakter — motivations, conflicts, at transformations.</em></p>
+
+      <div class="info">
+        <strong>Lesson Goal</strong>
+        Matapos ang lesson na ito, mai-deconstruct mo ang motivations, conflicts, at transformations ng mga pangunahing karakter, at mai-classify sila bilang static/dynamic, round/flat.
+      </div>
+
+      <!-- ======== Character Dossiers ======== -->
+      <h2>Character Dossiers Activity</h2>
+      <p>Bawat grupo ay gagawa ng "FBI File" para sa isang character. Pumili ng isa sa mga sumusunod:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Character</th>
+            <th>Key Traits</th>
+            <th>Static or Dynamic?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Scout Finch</strong></td>
+            <td>Curious, matapang, honest</td>
+            <td>Dynamic — lumalim ang understanding niya sa mundo</td>
+          </tr>
+          <tr>
+            <td><strong>Jem Finch</strong></td>
+            <td>Protective, idealistic, maturing</td>
+            <td>Dynamic — nagbago ang paniniwala niya sa justice</td>
+          </tr>
+          <tr>
+            <td><strong>Atticus Finch</strong></td>
+            <td>Moral, calm, principled</td>
+            <td>Static — consistent ang kanyang values</td>
+          </tr>
+          <tr>
+            <td><strong>Boo Radley</strong></td>
+            <td>Shy, kind, mysterious</td>
+            <td>Dynamic — nagbago mula sa "halimaw" patungong tagapagligtas</td>
+          </tr>
+          <tr>
+            <td><strong>Tom Robinson</strong></td>
+            <td>Kind, honest, empathetic</td>
+            <td>Static — consistent ang kanyang kabutihan</td>
+          </tr>
+          <tr>
+            <td><strong>Bob Ewell</strong></td>
+            <td>Lazy, abusive, racist</td>
+            <td>Static — hindi nagbago</td>
+          </tr>
+          <tr>
+            <td><strong>Mayella Ewell</strong></td>
+            <td>Lonely, sad, abused</td>
+            <td>Dynamic — lumabas ang vulnerability niya</td>
+          </tr>
+          <tr>
+            <td><strong>Calpurnia</strong></td>
+            <td>Strict, bridge between worlds</td>
+            <td>Static — consistent ang role niya</td>
+          </tr>
+          <tr>
+            <td><strong>Miss Maudie</strong></td>
+            <td>Kind, truthful, progressive</td>
+            <td>Static — consistent ang values niya</td>
+          </tr>
+          <tr>
+            <td><strong>Aunt Alexandra</strong></td>
+            <td>Proud, traditional, evolving</td>
+            <td>Dynamic — nagbago ang tingin niya sa mga Finch</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ======== Template ======== -->
+      <h2>FBI File Template</h2>
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <p><strong>Pangalan/Alias:</strong> Jean Louise "Scout" Finch</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <p><strong>Physical Description:</strong> Tomboy, hates dresses.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <p><strong>Internal Conflict:</strong> Nalilito sa hypocrisy ng adults; pinipilit maging "lady."</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <p><strong>Key Quotes:</strong> "I think there's just one kind of folks. Folks."</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <p><strong>Simbolo/Kinakatawan:</strong> Childhood innocence, moral curiosity.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <p><strong>Static or Dynamic?</strong> Dynamic – lumalim ang understanding niya sa mundo.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">7</div>
+        <div class="step-content">
+          <p><strong>Relatability (Taglish):</strong> "Scout ay parang batang walang filter, pero habang tumatanda, natututong magpahalaga ng empathy."</p>
+        </div>
+      </div>
+
+      <!-- ======== Quiz ======== -->
+      <h2>Quick Quiz</h2>
+
+      <div class="quiz-item">
+        <div class="quiz-question">1. Sino ang "dynamic" na character?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q1" value="a"> Atticus</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="b"> Scout</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="c"> Bob Ewell</label>
+        </div>
+        <div class="quiz-feedback" id="feedback1"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">2. Sino ang "static" na character?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q2" value="a"> Jem</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="b"> Atticus</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="c"> Boo Radley</label>
+        </div>
+        <div class="quiz-feedback" id="feedback2"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">3. Ano ang "round" character?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q3" value="a"> Simple at walang depth</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="b"> May maraming dimensions at complexity</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="c"> Walang conflict</label>
+        </div>
+        <div class="quiz-feedback" id="feedback3"></div>
+      </div>
+
+      <button class="quiz-submit" onclick="checkQuiz()">Check Answers</button>
+
+      <!-- ======== Project ======== -->
+      <div class="project">
+        <h3>Character Dossier Project</h3>
+        <p>Pumili ng isang character at gumawa ng "FBI File" gamit ang template sa itaas. I-post sa dingding at magbigay ng positive sticky note feedback sa iba.</p>
+      </div>
+
+      <!-- ======== Summary ======== -->
+      <h2>Summary</h2>
+      <ul>
+        <li>Ang mga character ay may iba't ibang types: static/dynamic, round/flat</li>
+        <li>Si Scout at Jem ay dynamic — nagbago sila sa buong kwento</li>
+        <li>Si Atticus ay static — consistent ang kanyang values</li>
+        <li>Ang character analysis ay tumutulong sa pag-unawa sa theme at plot</li>
+      </ul>
+
+      <div class="info">
+        <strong>Questions?</strong>
+        Magtanong sa teacher tungkol sa character analysis o sa mga terms.
+      </div>
+
+      <!-- ======== Recommended Resource ======== -->
+      <h2>Recommended Resource</h2>
+      <p><em>Palalimin ang iyong pagkaunawa:</em></p>
+      <ul>
+        <li><strong>SparkNotes: Character List</strong> — Detalyadong listahan ng mga character. <a href="https://www.sparknotes.com/lit/mocking/characters/" target="_blank" rel="noopener">Bisitahin</a></li>
+      </ul>
+
+      <!-- Prev / Next — auto-populated by lesson-nav.js -->
+      <div class="lesson-nav"></div>
+
+    </div>
+  </main>
+</div>
+
+<!-- Scripts — order matters -->
+<script src="../assets/lessons-data.js"></script>
+<script src="../assets/sidebar.js"></script>
+<script src="../assets/lesson-nav.js"></script>
+<script>
+  function checkQuiz() {
+    var answers = { q1: 'b', q2: 'b', q3: 'b' };
+    for (var key in answers) {
+      var sel = document.querySelector('input[name="' + key + '"]:checked');
+      var fb = document.getElementById('feedback' + key.slice(1));
+      if (!sel) {
+        fb.textContent = 'Please select an answer.';
+        fb.className = 'quiz-feedback incorrect';
+        continue;
+      }
+      if (sel.value === answers[key]) {
+        fb.textContent = '\u2705 Correct! Well done.';
+        fb.className = 'quiz-feedback correct';
+      } else {
+        fb.textContent = '\u274C Incorrect. Review the material and try again.';
+        fb.className = 'quiz-feedback incorrect';
+      }
+    }
+  }
+</script>
+<script>
+  (function() {
+    var btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var html = document.documentElement;
+        var isDark = html.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          html.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

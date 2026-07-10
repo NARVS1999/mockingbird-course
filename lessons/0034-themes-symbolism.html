@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 0034: Themes & Symbolism</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>if (localStorage.getItem("theme") === "dark") document.documentElement.setAttribute("data-theme", "dark");</script>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" title="Toggle theme">&#9788;</button>
+<div class="lesson-layout">
+  <aside class="lesson-sidebar" id="lesson-sidebar"></aside>
+  <main class="lesson-main">
+    <div class="lesson-container">
+
+      <h1>Lesson 0034: Themes & Symbolism Deep Dive</h1>
+      <p><em>Malalim na pagsusuri sa mga tema at simbolo ng nobela.</em></p>
+
+      <div class="info">
+        <strong>Lesson Goal</strong>
+        Matapos ang lesson na ito, maiintindihan mo ang major themes at makikilala ang central symbol ng mockingbird at iba pang motifs.
+      </div>
+
+      <!-- ======== Station 1 ======== -->
+      <h2>Station 1: Moral Courage vs. Physical Courage</h2>
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <p><strong>Basahin muli:</strong> Ang eksena ng mad dog (Ch. 10) at ang pag-upo ni Atticus sa labas ng kulungan (Ch. 15).</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <p><strong>Discussion:</strong> "Anong klaseng tapang ang ipinakita ni Atticus? Paano naiiba ito sa typical na bayani?"</p>
+        </div>
+      </div>
+
+      <!-- ======== Station 2 ======== -->
+      <h2>Station 2: The Mockingbird Symbol</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Mockingbird</th>
+            <th>Ebidensya</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Tom Robinson</strong></td>
+            <td>Wrongfully accused, killed despite innocence</td>
+          </tr>
+          <tr>
+            <td><strong>Boo Radley</strong></td>
+            <td>Mistreated by his father, pinagtsitsismisan, pero nagligtas ng buhay</td>
+          </tr>
+          <tr>
+            <td><strong>Scout</strong></td>
+            <td>Innocent child na natututo ng tungkol sa mundo</td>
+          </tr>
+          <tr>
+            <td><strong>Jem</strong></td>
+            <td>Nasira ang paniniwala sa justice — victim ng broken system</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="project">
+        <h3>Creative Task</h3>
+        <p>Gumuhit ng mockingbird at isulat sa loob ang mga "harmless" na characters na sinaktan ng prejudice.</p>
+      </div>
+
+      <!-- ======== Station 3 ======== -->
+      <h2>Station 3: Bildungsroman — Growing Up in Maycomb</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Chapter</th>
+            <th>Natutunan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Empathy</td>
+            <td>Ch. 3</td>
+            <td>"Walk in someone else's skin"</td>
+          </tr>
+          <tr>
+            <td>Acceptance</td>
+            <td>Ch. 31</td>
+            <td>Tanggapin si Boo hindi bilang halimaw</td>
+          </tr>
+          <tr>
+            <td>Injustice</td>
+            <td>Ch. 21</td>
+            <td>Matutunan na hindi laging makatarungan ang mundo</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ======== Station 4 ======== -->
+      <h2>Station 4: Gender Roles at Social Expectations</h2>
+
+      <blockquote>
+        <p>"I was not so sure, but Jem told me I was being a girl, that girls always imagined things."</p>
+        <footer>— Scout Finch</footer>
+      </blockquote>
+
+      <div class="project">
+        <h3>Essay Prompt</h3>
+        <p>"Paano pinipilit ng lipunan na ikahon sina Scout at Mayella sa gender roles? Ibigay ang ebidensya mula sa text."</p>
+      </div>
+
+      <!-- ======== Synthesis ======== -->
+      <h2>Synthesis: One-Pager</h2>
+
+      <div class="project">
+        <h3>One-Pager Activity</h3>
+        <p>Sa isang bond paper, pagsamahin ang quotes, drawings, at personal reflection tungkol sa "Coexistence of Good and Evil" sa Maycomb.</p>
+      </div>
+
+      <!-- ======== Quiz ======== -->
+      <h2>Quick Quiz</h2>
+
+      <div class="quiz-item">
+        <div class="quiz-question">1. Sino ang "mockingbird" sa nobela?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q1" value="a"> Atticus</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="b"> Tom Robinson at Boo Radley</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="c"> Bob Ewell</label>
+        </div>
+        <div class="quiz-feedback" id="feedback1"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">2. Ano ang "bildungsroman"?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q2" value="a"> Isang uri ng tula</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="b"> Isang kwento tungkol sa paglaki</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="c"> Isang uri ng trial</label>
+        </div>
+        <div class="quiz-feedback" id="feedback2"></div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question">3. Ano ang "coexistence of good and evil"?</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="q3" value="a"> Ang mundo ay puro mabuti</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="b"> Ang mabuti at masama ay magkasama sa mundo</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="c"> Ang mundo ay puro masama</label>
+        </div>
+        <div class="quiz-feedback" id="feedback3"></div>
+      </div>
+
+      <button class="quiz-submit" onclick="checkQuiz()">Check Answers</button>
+
+      <!-- ======== Summary ======== -->
+      <h2>Summary</h2>
+      <ul>
+        <li>Ang mockingbird ay simbolo ng inosenteng tao (Tom, Boo)</li>
+        <li>Moral courage > physical courage sa nobela</li>
+        <li>Ang bildungsroman ay tungkol sa paglaki ni Scout</li>
+        <li>Ang "coexistence of good and evil" ay isa sa pinaka-mahalagang tema</li>
+      </ul>
+
+      <div class="info">
+        <strong>Questions?</strong>
+        Magtanong sa teacher tungkol sa themes o symbolism.
+      </div>
+
+      <!-- ======== Recommended Resource ======== -->
+      <h2>Recommended Resource</h2>
+      <p><em>Palalimin ang iyong pagkaunawa:</em></p>
+      <ul>
+        <li><strong>SparkNotes: Themes</strong> — Detalyadong analysis ng mga tema. <a href="https://www.sparknotes.com/lit/mocking/themes/" target="_blank" rel="noopener">Bisitahin</a></li>
+      </ul>
+
+      <!-- Prev / Next — auto-populated by lesson-nav.js -->
+      <div class="lesson-nav"></div>
+
+    </div>
+  </main>
+</div>
+
+<!-- Scripts — order matters -->
+<script src="../assets/lessons-data.js"></script>
+<script src="../assets/sidebar.js"></script>
+<script src="../assets/lesson-nav.js"></script>
+<script>
+  function checkQuiz() {
+    var answers = { q1: 'b', q2: 'b', q3: 'b' };
+    for (var key in answers) {
+      var sel = document.querySelector('input[name="' + key + '"]:checked');
+      var fb = document.getElementById('feedback' + key.slice(1));
+      if (!sel) {
+        fb.textContent = 'Please select an answer.';
+        fb.className = 'quiz-feedback incorrect';
+        continue;
+      }
+      if (sel.value === answers[key]) {
+        fb.textContent = '\u2705 Correct! Well done.';
+        fb.className = 'quiz-feedback correct';
+      } else {
+        fb.textContent = '\u274C Incorrect. Review the material and try again.';
+        fb.className = 'quiz-feedback incorrect';
+      }
+    }
+  }
+</script>
+<script>
+  (function() {
+    var btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var html = document.documentElement;
+        var isDark = html.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          html.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Guide — To Kill a Mockingbird</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>if (localStorage.getItem("theme") === "dark") document.documentElement.setAttribute("data-theme", "dark");</script>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" title="Toggle theme">&#9788;</button>
+
+<div class="landing" style="max-width: 800px; text-align: left; padding-top: 2rem;">
+  <h1 style="text-align: center;">Character Guide</h1>
+  <p class="subtitle" style="text-align: center;">Mga Pangunahing Karakter — To Kill a Mockingbird</p>
+
+  <h2>The Finch Family</h2>
+  <table>
+    <thead>
+      <tr><th>Karakter</th><th>Age</th><th>Traits</th><th>Role</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Jean Louise "Scout" Finch</strong></td><td>6-9</td><td>Curious, matapang, honest, hates dresses</td><td>Narrator, protagonist</td></tr>
+      <tr><td><strong>Jeremy "Jem" Finch</strong></td><td>10-13</td><td>Protective, idealistic, maturing</td><td>Co-protagonist</td></tr>
+      <tr><td><strong>Atticus Finch</strong></td><td>~50</td><td>Moral, calm, principled, expert shooter</td><td>Father, moral hero</td></tr>
+      <tr><td><strong>Calpurnia</strong></td><td>Adult</td><td>Strict, bridge between worlds</td><td>Housekeeper, second mother</td></tr>
+    </tbody>
+  </table>
+
+  <h2>The Radleys</h2>
+  <table>
+    <thead>
+      <tr><th>Karakter</th><th>Traits</th><th>Role</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Arthur "Boo" Radley</strong></td><td>Shy, kind, mysterious, recluse</td><td>Tagapagligtas, mockingbird symbol</td></tr>
+      <tr><td><strong>Nathan Radley</strong></td><td>Strict, religious, secretive</td><td>Father of Boo, sumarado ng knothole</td></tr>
+    </tbody>
+  </table>
+
+  <h2>The Ewells</h2>
+  <table>
+    <thead>
+      <tr><th>Karakter</th><th>Traits</th><th>Role</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Bob Ewell</strong></td><td>Lazy, abusive, racist, liar</td><td>Antagonist, accused rapist</td></tr>
+      <tr><td><strong>Mayella Ewell</strong></td><td>Lonely, sad, abused, victim</td><td>Victim of circumstance</td></tr>
+    </tbody>
+  </table>
+
+  <h2>The Cunninghams</h2>
+  <table>
+    <thead>
+      <tr><th>Karakter</th><th>Traits</th><th>Role</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Walter Cunningham Sr.</strong></td><td>Poor but proud, honest</td><td>Member of lynch mob, juror</td></tr>
+      <tr><td><strong>Walter Cunningham Jr.</strong></td><td>Poor, polite</td><td>Classmate of Scout</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Other Key Characters</h2>
+  <table>
+    <thead>
+      <tr><th>Karakter</th><th>Traits</th><th>Role</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Charles Baker "Dill" Harris</strong></td><td>Small, imaginative, lonely</td><td>Friend, summer visitor</td></tr>
+      <tr><td><strong>Miss Maudie Atkinson</strong></td><td>Kind, truthful, progressive</td><td>Neighbor, truth-teller</td></tr>
+      <tr><td><strong>Aunt Alexandra</strong></td><td>Proud, traditional, evolving</td><td>Atticus's sister</td></tr>
+      <tr><td><strong>Miss Caroline Fisher</strong></td><td>New, inexperienced, strict</td><td>Scout's first teacher</td></tr>
+      <tr><td><strong>Heck Tate</strong></td><td>Fair, protective, practical</td><td>Sheriff</td></tr>
+      <tr><td><strong>Judge Taylor</strong></td><td>Wise, strategic</td><td>Judge of the trial</td></tr>
+      <tr><td><strong>Mr. Gilmer</strong></td><td>Aggressive prosecutor</td><td>Prosecutor vs. Atticus</td></tr>
+      <tr><td><strong>Mrs. Henry Lafayette Dubose</strong></td><td>Cranky, brave, addicted</td><td>Moral lesson on courage</td></tr>
+      <tr><td><strong>Dolphus Raymond</strong></td><td>Pretends to be drunk, kind</td><td>Bridge between races</td></tr>
+      <tr><td><strong>Tom Robinson</strong></td><td>Kind, honest, empathetic</td><td>Mockingbird symbol, accused</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Character Relationships</h2>
+  <p>Ang mga relationship sa nobela ay nagpapakita ng social dynamics:</p>
+  <ul>
+    <li><strong>Scout ↔ Boo:</strong> Mula sa takot patungong empathy</li>
+    <li><strong>Atticus ↔ Tom:</strong> Abogado at client — mutual respect</li>
+    <li><strong>Atticus ↔ Bob Ewell:</strong> Moral vs. immoral</li>
+    <li><strong>Scout ↔ Calpurnia:</strong> Cross-race relationship</li>
+    <li><strong>Jem ↔ Mrs. Dubose:</strong> Lesson on courage</li>
+  </ul>
+
+  <div class="info">
+    <strong>Tip</strong>
+    I- Bookmark ang page na ito para sa quick reference habang nagbabasa ng nobela!
+  </div>
+
+  <script>
+    (function() {
+      var btn = document.getElementById('themeToggle');
+      if (btn) {
+        btn.addEventListener('click', function() {
+          var html = document.documentElement;
+          var isDark = html.getAttribute('data-theme') === 'dark';
+          if (isDark) {
+            html.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+          } else {
+            html.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
